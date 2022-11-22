@@ -10,26 +10,51 @@
 @font-face {
     font-family: italic;
     src: url('fontes/Ostrich\ Sans\ Inline-regular.otf') format('opentype');
-}
+
+  }
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+  }
+  .ou{
+      display: block;
+  }
+  header{
+    background-color: rgb(21, 4, 98);
+    padding: 10px;
+  }
+  nav{
+    height: 100%;
+    width: 0px;
+    background-color: rgb(21, 4, 98);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: width 0.3s;
+  }
+  .btn-abrir{
+    color: white;
+    font-size: 25px;
+  }
+  nav a{
+    color :white;
+    font-size: 25px;
+    display: block;
+    padding: 12px 10px 12px 32px;
+  }
+  nav a:hover{
+    color: black;
+  }
+  main{
+    padding: 10px;
+    transition: margin-left 0.5s;
+  }
 a{
 font-family: 'apollo';
 font-weight: bold;
-color: black;
-padding: 18px;
-margin: 5px;
-right: 40px;
-margin: auto;
-text-decoration: yellow;
-}
-a:hover{
-color: white;
-font-weight: bold;
-background-color: black;
-border: 3px solid rgb(129, 129, 129);
-border-radius: 12px;
-outline: 500px;
-right: 40px;
-margin: auto;
+text-decoration: none;
 }
 h1{
 font-family: 'apollo' , sans-serif;
@@ -53,14 +78,6 @@ margin: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-.sublinhado:active{
-    color:#e5ff00;
-    text-decoration:underline;
-    background-color:#ffffff;
-}
-.sublinhado:hover{
-text-decoration: none;
 }
 .img2{
 height: 700px;

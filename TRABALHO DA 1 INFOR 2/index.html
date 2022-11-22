@@ -10,15 +10,17 @@
 </head>
 <body>
     <header>
-        <nav>
-            <img src="img/hud.png" width="30px">
-            <u class="sublinhado"><a href="index.html">Início</a></u>
-            <u class="sublinhado"><a href="@">Contato</a></u>
-            <u class="sublinhado"><a href="integrantes.html">Integrantes</a></u>
-           <p> <input id="searchbar" onkeyup="search()" type="text"
-            name="search" placeholder="Search.."></p>
-        </nav>
+<a href="#" class="btn-abrir" onclick="abriMenu()">&#9776; Abrir</a>
     </header>
+        <nav id="menu">
+          <a href="#" onclick="fecharMenu()">&times; Fechas</a></p>
+          <a href="index.html">Início</a></p>
+          <a href="contato.html">Contato</a></p>
+          <a href="integrantes.html">Integrantes</a></p>
+        </nav>
+      <p><input id="searchbar" onkeyup="search()" type="text"
+            name="search" placeholder="Search.."></p>
+            <main id="conteudo">
     <p><h1>
     1 INFOR 2  
     </h1></p>
@@ -52,6 +54,7 @@
         <p> A característica fundamental da sociedade songhai era a hierarquização, que dividia a população em nobreza, homens livres, membros de castas de ofícios e escravos.</p>
         <div class="img2">
         <img src="img/caracteristicas.jpg" width="100%"></li>
+        </main>
         <hr width="100%">
         <h2 class="decoração">Compartilhe =]</h2>
 
@@ -60,4 +63,14 @@
 </ol>
     </body> 
     <script src="animals.js"></script>
+    <script>
+        function abriMenu(){
+   document.getElementById('menu').style.width = '250px';
+   ducument.getElementById('conteudo').style.width = '250px';
+        }
+        function fecharMenu(){
+            document.getElementById('menu').style.width = '0px';
+            document.getElementById('conteudo').style.marginLeft = "0px";
+        }
+    </script>
 </html>
